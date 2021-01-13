@@ -32,16 +32,16 @@ public class RoverTest {
 
     @Test
     public void testExecuteCommandShouldMoveForwardWhenCommandF() throws Exception {
-        int expected = y.getLocation() + 1;
+        int result = y.getLocation() + 1;
         rover.executeCommand('F');
-        assertEquals(rover.retrieveCoordinates().getY().getForwardLocation(), expected);
+        assertEquals(rover.retrieveCoordinates().getY().getForwardLocation(), result);
     }
 
     @Test
     public void testExecuteCommandShouldMoveBackWhenCommandB() throws Exception {
-        int expected = y.getLocation() - 1;
+        int result = y.getLocation() - 1;
         rover.executeCommand('B');
-        assertEquals(rover.retrieveCoordinates().getY().getBackwardLocation(), expected);
+        assertEquals(rover.retrieveCoordinates().getY().getBackwardLocation(), result);
     }
 
     @Test

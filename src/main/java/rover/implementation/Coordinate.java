@@ -90,5 +90,4 @@ public class Coordinate {
         String status = "";
         return "(" + getX().getLocation() + ", " + getY().getLocation() + ")" + " " + getDirection() + status;
     }
-
 }
